@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MPK's Personal Dashboard</title>
+        <link rel="stylesheet" href="CSS/style.css" />
+    </head>
+    <body>
+        <div class="dashboard">
+            <h1>MPK's Dashboard</h1>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle">🌙 Dark Mode</button>
+
+            <!-- Clock Widget -->
+            <div class="widget clock">
+                <h2>Current Time</h2>
+                <p id="time">00:00:00</p>
+            </div>
+
+            <!-- To-Do List -->
+            <div class="widget todo">
+                <h2>To-Do List</h2>
+                <ul id="todo-list">
+                    <li>⬜ Finish HTML & CSS</li>
+                    <li>⬜ Add animations</li>
+                    <li>⬜ Make it dynamic with JS</li>
+                </ul>
+                <input type="text" id="new-task" placeholder="New task..." />
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <!-- Coding Goal Tracker -->
+            <div class="widget tracker">
+                <h2>Daily Coding Goal</h2>
+                <p>How many algorithm questions have you solved?</p>
+                <input type="number" id="algo-input" min="0" max="1000" value="0" />
+                <button onclick="updateAlgoProgress()">Update Progress</button>
+                <progress id="coding-progress" value="0" max="1000"></progress>
+                <p id="progress-text">0 / 1000</p>
+            </div>
+        </div>
+
+        <script src="JS/script.js"></script>
+    </body>
+</html>
