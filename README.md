@@ -3,7 +3,7 @@ A personal task management dashboard built with HTML, CSS, and JavaScript. This 
 
 Live Demo
 You can view the live version of the dashboard here:
-{https://mpk-dashboard.netlify.app}
+https://mpk-dashboard.netlify.app
 
 Features
 Task Completion: Click on a task to mark it as completed, with a checkmark appearing next to the task.
